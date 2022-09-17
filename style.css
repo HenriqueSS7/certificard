@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght;700&display=swap");
+
+body {
+  /*fundo azul meio degrade e mudança da fonte*/
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+  font-family: "Roboto", sans-serif;
+}
+/*container engloba tudo dentra da classe container do html*/
+.container {
+  background: #ecf4ff; /*cor branca de fundo*/
+  color: #1c1c1c; /*cor preta da fonte*/
+  margin: 64px; /*margem do branco*/
+  border-radius: 20px; /*borda redonda do branco*/
+  box-shadow: 6px 6px 6px #0e1d2f; /*sombra do branco*/
+  padding: 60px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between; /*separar o .perfil do .titulo*/
+}
+
+.perfil {
+  display: flex;
+  /* align-items: center; centralizando as coisas que estão dentro da classe perfil*/
+}
+
+.perfil-foto {
+  border-radius: 460px; /*arredondando a foto*/
+  max-height: 160px; /*colocando limite de altura na foto*/
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /*sombra da foto*/
+}
+
+/*estilização do titulo e subtitulo h1 e h3*/
+.titulo {
+  margin-left: 16px; /*borda da esquerda*/
+}
+
+/*estilização somente do h1 na classe titulo*/
+.titulo h1 {
+  font-weight: 700; /*peso da fonte, mais grossa ou mais fina*/
+  font-size: 36px; /*tamanho da fonte*/
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px; /*tamanho da fonte*/
+}
+
+.tema button {
+  align-self: flex-end;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 8px 16px; /*8 distancia de cima e de baixo e 16 a margem dos lados*/
+  background: #ecf4ff;
+  border-radius: 100px;
+}
+
+/*as classes do html servem pra separar oq vai ser estilizado no css*/
+
+.projetos {
+  display: flex;
+  flex-direction: column; /*direção dos elementos, vertical ou horizontal*/
+  /*align-items: center;*/
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  margin-top: 32px; /*margem em cima*/
+  padding: 15px; /*espaçar os elementos da borda*/
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos-item {
+  list-style-type: none; /*tirar o pontinho antes dos itens*/
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px; /*altura da linha*/
+}
+
+.projetos-item a {
+  color: #1c1c1c;
+  text-decoration: none; /*tirar o sublinhado*/
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+}
+
+.dark .container {
+  background: #333439;
+  color: #f7f7f7;
+}
+
+.dark .projetos {
+  color: #1c1c1c;
+}
+
+.dark .tema button {
+  background: #1c1c1c;
+  color: #f7f7f7;
+  border: 2px solid #f7f7f7;
+}
